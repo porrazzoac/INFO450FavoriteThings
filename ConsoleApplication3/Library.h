@@ -8,8 +8,10 @@ using namespace std;
 class Library
 
 {
+private:
 
 	Game library[100];
+
 	int Librarysize;
 
 public:

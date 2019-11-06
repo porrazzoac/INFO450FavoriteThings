@@ -12,23 +12,37 @@ void input();
 int main()
 {
 	Game myGames;
+
 	Library myLibrary;
+
 	intro();
+
 	char answer{};
+
 	string gameTitle;
+
 	string gameDev;
+
 	string gameGenre;
+
 	string gameRating;
+
 	string gamePlatform;
+
 	double gameCost;
 
 	do
 	{
 		myLibrary.addGame();
+
 		input();
+
 		cin >> answer;
+
 		cout << endl;
+
 		cin.clear();
+
 		cin.ignore();
 		
 	} while (answer == 'Y');

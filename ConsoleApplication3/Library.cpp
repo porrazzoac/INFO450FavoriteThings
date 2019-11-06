@@ -18,9 +18,7 @@ int Library::addGame()
 {
 
 	Game newLibrary;
-
 	newLibrary.addgameLibrary();
-
 	library[Librarysize] = newLibrary;
 	Librarysize++;
 	return 0;

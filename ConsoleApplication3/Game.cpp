@@ -6,10 +6,15 @@ using namespace std;
 Game::Game()
 {
 	gameTitle = "";
+
 	gameDev = "";
+
 	gameGenre = "";
+
 	gameRating = "";
+
 	gamePlatform = "";
+
 	gameCost = 0;
 }
 
@@ -97,13 +102,13 @@ void Game::addgameLibrary()
 	} while (gameTitle.empty());
 }
 
-ostream& operator << (ostream& os, Game& library)
+ostream& operator << (ostream& output, Game& library)
 {
-	os << "Game: " << library.gameTitle << endl;
-	os << "Developer: " << library.gameDev << endl;
-	os << "Genre: " << library.gameGenre << endl;
-	os << "Rating: " << library.gameRating << endl;
-	os << "Platform: " << library.gamePlatform << endl;
-	os << "Cost: " << library.gameCost << endl;
-	return os;
+	output << "Game: " << library.gameTitle << endl;
+	output << "Developer: " << library.gameDev << endl;
+	output << "Genre: " << library.gameGenre << endl;
+	output << "Rating: " << library.gameRating << endl;
+	output << "Platform: " << library.gamePlatform << endl;
+	output << "Cost: " << library.gameCost << endl;
+	return output;
 }

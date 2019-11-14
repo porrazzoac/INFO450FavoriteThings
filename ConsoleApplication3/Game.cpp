@@ -73,33 +73,33 @@ void Game::setgameCost(double C)
 	gameCost = C;
 }
 
-void Game::addgameLibrary()
+void Game::addgame()
 {
 	do
 	{
 		cout << "Please enter the game Title: " << endl;
-		getline(cin, gameTitle);
+		cin >> gameTitle;
 
 		cout << "Please enter the game Developer: " << endl;
-		getline(cin, gameDev);
+		cin >> gameDev;
 		
 
 		cout << "Please enter the game Genre: " << endl;
-		getline(cin, gameGenre);
+		cin >> gameGenre;
 		
 
 		cout << "Please enter the game Rating: " << endl;
-		getline(cin, gameRating);
+		cin >> gameRating;
 		
 
 		cout << "Please enter the game Platform: " << endl;
-		getline(cin, gamePlatform);
+		cin >> gamePlatform;
 		
 
 		cout << "Please enter the game Cost: " << endl;
 		cin >> gameCost;
 		cin.ignore();
-	} while (gameTitle.empty());
+	} while (gamePlatform.empty());
 }
 
 ostream& operator << (ostream& output, Game& library)

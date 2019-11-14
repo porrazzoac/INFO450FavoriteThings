@@ -8,9 +8,8 @@ using namespace std;
 class Library
 
 {
-private:
 
-	Game library[100];
+	Game library[1000];
 
 	int Librarysize;
 
@@ -19,8 +18,6 @@ public:
 	Library();
 
 	int addGame();
-
-	void displayList();
 
 };
 

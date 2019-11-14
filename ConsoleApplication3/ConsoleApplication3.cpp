@@ -5,35 +5,38 @@
 
 using namespace std;
 
-void intro();
+string gameTitle;
+
+string gameDev;
+
+string gameGenre;
+
+string gameRating;
+
+string gamePlatform;
+
+double gameCost;
+
+Game myGames;
 void input();
 
 
 int main()
 {
-	Game myGames;
+	cout << "   Track your Favorite Video Games!   " << endl;
+	cout << "   Track the Title, Developer, Genre, Rating, Platform, and Cost   " << endl;
+	cout << "   Build and Maintain your Library!   " << endl;
+	cout << "   Compare with your Friends to see whos Library is better   " << endl;
+	cout << endl;
+
 
 	Library myLibrary;
 
-	intro();
 
 	char answer{};
 
-	string gameTitle;
-
-	string gameDev;
-
-	string gameGenre;
-
-	string gameRating;
-
-	string gamePlatform;
-
-	double gameCost;
-
 	do
 	{
-		myLibrary.addGame();
 
 		input();
 
@@ -71,22 +74,9 @@ int main()
 		cin >> gameCost;
 		
 	} while (answer =='Y');
-
-	myLibrary.displayList();
 	
 	system("pause");
 	return 0;
-}
-
-
-void intro()
-{
-	cout << "   Track your Favorite Video Games!   " << endl;
-	cout << "   Track the Title, Developer, Genre, Rating, Platform, and Cost   " << endl;
-	cout << "   Build and Maintain your Library!   " << endl;
-	cout << "   Compare with your Friends to see whos Library is better   " << endl;
-	cout << endl;
-
 }
 
 void input()

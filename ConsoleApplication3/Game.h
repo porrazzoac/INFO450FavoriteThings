@@ -5,7 +5,6 @@ using namespace std;
 
 class Game
 {
-private:
 
 	string gameTitle;
 
@@ -47,8 +46,6 @@ public:
 	void setgamePlatform(string P);
 
 	void setgameCost(double C);
-
-	void addgameLibrary();
 
 	friend ostream& operator<<(ostream& output, Game& Gamelibrary);
 }; 

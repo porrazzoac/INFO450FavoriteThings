@@ -99,16 +99,10 @@ void Game::addgame()
 		cout << "Please enter the game Cost: " << endl;
 		cin >> gameCost;
 		cin.ignore();
-	} while (gamePlatform.empty());
+	} while (gamePlatform == " ");
 }
 
 ostream& operator << (ostream& output, Game& library)
 {
-	output << "Game: " << library.gameTitle << endl;
-	output << "Developer: " << library.gameDev << endl;
-	output << "Genre: " << library.gameGenre << endl;
-	output << "Rating: " << library.gameRating << endl;
-	output << "Platform: " << library.gamePlatform << endl;
-	output << "Cost: " << library.gameCost << endl;
 	return output;
 }
